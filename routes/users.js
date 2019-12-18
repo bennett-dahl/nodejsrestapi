@@ -24,10 +24,10 @@ router.get('/', function(req, res, next) {
 
 const pool = mysql.createPool ({
   connectionLimit: 10,
-  user: 'PQfeTWhyLZ',
-  host: 'remotemysql.com',
-  password: 'a5LWjOXkxG',
-  database: 'PQfeTWhyLZ'
+  user: 'bff6c128cd0bfc',
+  host: 'us-cdbr-iron-east-05.cleardb.net',
+  password: 'ea11c111',
+  database: 'heroku_e258587ef07f659'
 });
 
 function getConnection() {
