@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Users: <%= users.length%></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1>There are <%= users.length%> Total Users</h1>
+<ul>
+    <% users.forEach(function(user){ %>
+        <li> User #: <b><%= user.ID %></b>
+            <ul>
+                <li> First Name: <%= user.firstName %></li>
+                <li> Last Name: <%= user.lastName %></li>
+                <li> Age: <%= user.age %></li>
+            </ul>
+        </li>
+    <% }); %>
+</ul>
+</body>
+</html>
