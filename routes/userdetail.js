@@ -32,6 +32,11 @@ router.get('/user/:id', (req, res, next) => {
     });
 });
 
+//create router to render New user form
+router.get('/new_user', (req, res, next) => {
+    res.render('form');
+});
+
 //User creation router requires body parser in main app. names are derived from form attribute "name"
 router.post('/user_create', (req, res) => {
     console.log("Creating new user....");

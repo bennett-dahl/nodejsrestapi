@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>No User found!</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-<h1>User #<%= id %> was not found in the database</h1>
-<p>Try another user #</p>
-</body>
+    <head>
+        <title>No User found!</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <% include public/templates/nav.ejs  %>
+        <h1>User #<%= id %> was not found in the database</h1>
+        <p>Try another user #</p>
+    </body>
 </html>

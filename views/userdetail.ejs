@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title><%= firstName %> <%= lastName%></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-<h1><%= firstName %> <%= id %></h1>
-<p><%= firstName %> <%= lastName %>, is <%= age %> years old.</p>
-</body>
+    <head>
+        <title><%= firstName %> <%= lastName%></title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+
+        <% include public/templates/nav.ejs  %>
+
+        <h1><%= firstName %> <%= id %></h1>
+        <p><%= firstName %> <%= lastName %>, is <%= age %> years old.</p>
+    </body>
 </html>
