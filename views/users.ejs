@@ -9,7 +9,7 @@
         <h1>There are <%= users.length%> Total Users</h1>
         <ul>
             <% users.forEach(function(user){ %>
-                <li> User #: <b><%= user.ID %></b>
+                <li> User #: <a href="/user/<%=user.ID%>"><b><%= user.ID %></b></a>
                     <ul>
                         <li> First Name: <%= user.firstName %></li>
                         <li> Last Name: <%= user.lastName %></li>
