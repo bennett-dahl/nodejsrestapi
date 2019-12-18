@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
         allUserData.push(user);
       });
       // getConnection().end();
-      res.render('users', { users: allUserData });
+      res.render('users', { users: allUserData, active: 'users' });
     };
   });
 });

@@ -22,7 +22,8 @@ router.get('/user/:id', (req, res, next) => {
                 id: rows[0].id,
                 firstName: rows[0].firstName,
                 lastName: rows[0].lastName,
-                age: rows[0].age
+                age: rows[0].age,
+                active: 'userDetail'
             });
         } else {
             res.render('nouser', {
@@ -34,7 +35,7 @@ router.get('/user/:id', (req, res, next) => {
 
 //create router to render New user form
 router.get('/new_user', (req, res, next) => {
-    res.render('form');
+    res.render('form', {active: 'newUser'});
 });
 
 //User creation router requires body parser in main app. names are derived from form attribute "name"

@@ -1,5 +1,46 @@
-<div id="nav">
-    <a href="/">Home</a> |
-    <a href="/new_user">Add User</a> |
-    <a href="/users">All Users</a>
+<nav class="" id="nav">
+   <!-- Nav tabs -->
+<ul class="nav nav-tabs" id="navId">
+    <li class="nav-item ">
+        <a href="/" class="nav-link <%if(active=="index"){%>active text-dark"<%}%>">Home</a>
+    </li>
+    <li class="nav-item">
+        <a href="/users" class="nav-link <%if(active=="users"){%>active text-dark"<%}%>">All Users</a>
+    </li>
+    <li class="nav-item">
+        <a href="/new_user" class="nav-link <%if(active=="newUser"){%>active text-dark"<%}%>">Add User</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+           aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu ">
+            <a class="dropdown-item " href="#tab2Id">Action</a>
+            <a class="dropdown-item " href="#tab3Id">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#tab4Id">Action</a>
+        </div>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+    <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
 </div>
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+</nav>
+
+
+<!--
+<a href="/">Home</a> |
+<a href="/new_user">Add User</a> |
+<a href="/users">All Users</a>
+-->
