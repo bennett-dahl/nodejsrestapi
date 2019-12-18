@@ -26,7 +26,7 @@
                         <th><%= user.firstName%></th>
                         <th><%= user.lastName%></th>
                         <th><%= user.age %></th>
-                        <td><button class="btn btn-secondary btn-sm">Delete</button> | <button class="btn btn-secondary btn-sm">Edit</button></td>
+                        <td><button class="btn btn-secondary btn-sm" onclick="location.href'/user/<%= user.ID %>'">Detail</button> | <button class="btn btn-secondary btn-sm">Delete</button></td>
                     </tr>
                 <% }); %>
             </tbody>
