@@ -6,3 +6,18 @@
 .dark-nav {
   background-color: #333333;
 }
+
+.nav-link {
+  color: #333333 !important;
+}
+
+.nav-link:hover {
+  color: #909090 !important;
+}
+
+
+
+.dropdown-item:hover {
+  color: #909090;
+  background-color: #d5d5d5 !important;
+}
